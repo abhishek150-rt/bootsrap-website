@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap-5 Website</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body class="bg-dark">
+
+
+    <!--NAVIGATION BAR -->
+    <div class="container-fluid p-1 bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-5">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand w3-xlarge" href="index.html">
+                    <img src="https://global-uploads.webflow.com/5e157547d6f791d34ea4e2bf/6087f2b060c7a92408bac811_logo.svg" id="logo" alt="" width="40" height="34">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active w3-large" aria-current="page" href="/index.html"> <i class="fa fa-home mx-2"></i>Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link w3-large " href="# "><i class="fas fa-user mx-2"></i>User</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link w3-large" href="contact.html"><i
+                                    class="fas fa-envelope mx-2 "></i>Contact</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle w3-large" href="# " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">German language</a></li>
+                                <li><a class="dropdown-item" href="#">French language</a></li>
+
+                                <li><a class="dropdown-item " href="# ">Japanese language</a></li>
+                                <li><a class="dropdown-item " href="# ">Spanish language</a></li>
+                                <li><a class="dropdown-item " href="# ">IELTS</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex ">
+                        <input class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
+                        <button class="btn btn-danger " type="submit ">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid w3-display-container position-relative">
+        <div class="container-fluid " style="padding: 0 ">
+            <img src="/Images/hero.png " alt=" " width="100% ">
+            <div class="icon-container display-right ">
+                <div class="icon-row w3-text-white p-2 mb-1 " style="background-color:#2b4f60; ">
+                    <i class="far fa-calendar fa-2x icon w3-hover-text-yellow "></i>
+                </div>
+                <div class="icon-row p-2 w3-text-white " style="background-color: #d32525; ">
+                    <i class="far fa-envelope fa-2x icon w3-hover-text-red "></i>
+                </div>
+                <div class="icon-row w3-text-white p-2 mt-1 " style="background-color: #25d366; ">
+                    <i class="fab fa-whatsapp fa-2x icon w3-hover-text-green "></i>
+                </div>
+            </div>
+            <div class="icon-container display-left ">
+                <div class="icon-row w3-text-white p-2 mb-1 " style="background-color: rgb(66, 103, 178); ">
+                    <i class="fab fa-facebook fa-2x icon "></i>
+                </div>
+                <div class="icon-row p-2 w3-text-white " style="background-color: rgb(29 ,161, 242); ">
+                    <i class="fab fa-twitter fa-2x icon "></i>
+                </div>
+                <div class="icon-row w3-text-white p-2 mt-1 " style="background: #0072b1; ">
+                    <i class="fab fa-linkedin fa-2x icon "></i>
+                </div>
+            </div>
+            <div class="banner container position-absolute top-100 start-50 translate-middle ">
+                <h4 class=" text-white text-center p-3 ">
+                    Our Newly Introduced Course
+                </h4>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--CARDS -->
+    <div class="container-fluid card-container bg-dark ">
+        <div class="row flex-row justify-content-center p-5 ">
+            <div class="col-lg-2 col-md-3 col-sm-12 my-5 p-3 ">
+                <div class="card h-100 ">
+                    <img src="/Images/german (2).png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">German Language</h5>
+                        <p class="card-text "><small class="text-danger ">Duration - 4-12 Months</small></p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <a href="german.html " class="btn btn-dark w3-btn-block btn-large ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 my-5 p-3 ">
+                <div class="card h-100 ">
+                    <img src="/Images/jap (2).png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Japanese Language</h5>
+                        <p class="card-text "><small class="text-danger ">Duration - 4-12 Months</small></p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <a href="japan.html " class="btn btn-dark w3-btn-block btn-large ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 my-5 p-3 ">
+                <div class="card h-100 ">
+                    <img src="/Images/french (2).png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">French Language</h5>
+                        <p class="card-text "><small class="text-danger ">Duration - 4-12 Months</small></p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <a href="french.html " class=" btn btn-dark w3-btn-block btn-large ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 my-5 p-3 ">
+                <div class="card h-100 ">
+                    <img src="/Images/spanish.png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Spanish Language</h5>
+                        <p class="card-text "><small class="text-danger ">Duration - 4-12 Months</small></p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <a href="spanish.html " class="btn btn-dark w3-btn-block btn-large ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 my-5 p-3 ">
+                <div class="card h-100 ">
+                    <img src="/Images/Ielts.png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">International Language </h5>
+                        <p class="card-text "><small class="text-danger ">Duration - 4-12 Months</small></p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <a href="german.html " class="btn btn-dark w3-btn-block btn-large ">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-3 pb-3 bg-white ">
+        <div class="spinner-grow text-primary " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="container-fluid text-justify text-white " style="background-color:white; text-align: justify; ">
+        <div class="row p-2">
+            <div class="col-lg-10 col-md-10 sm-10 p-5 mx-auto" style="background-color: #485461; background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);">
+                <h1 class="display-2 font-weight-bolder mb-5 ">
+                    ABOUT US
+                </h1>
+                <p class="display-4 ">
+                    Language Zone Dehradun is a best foreign Language training provider in Dehradun Uttarakhand. We provide Japanese, French, Spanish, German & IELTS Language course training With a team of dedicated and knowledgeable learning professionals having profound
+                </p>
+                <p class="display-4 ">
+                    subject-matter expertise, we deliver quality training solutions to map all your learning needs. Language Zone Dehradun brings forth an array of specialized and in-demand Foreign training courses in Dehradun.
+                </p>
+                <p class="display-4 ">
+                    We at Language Zone Dehradun, offer you a power-packed resource pool to help you gain unparalleled and deep insights on Foreign Language Course through diverse modes. Our guaranteed to run schedules, online and classroom training methods, customized corporate,
+                    individual, and group training are headed by industry experienced, certified and seasoned Language professionals, who help you to conquer your Foreign Language Training learning goals and carve successful careers.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid pt-3 pb-3 bg-white ">
+            <div class="spinner-grow text-primary " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Carousel -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true " aria-label="Slide 1 "></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Images/J (1).jpg" class="d-block w-100" alt="slider">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/J (4).jpg" class="d-block w-100" alt="slider">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/J (3).jpg" class="d-block w-100" alt="slider">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/J (2).jpg" class="d-block w-100" alt="slider">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 50px; height: 50px;"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="width: 50px; height: 50px;"></span>
+                <span class="visually-hidden ">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-3 pb-3 bg-white ">
+        <div class="spinner-grow text-primary " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark " role="status ">
+            <span class="visually-hidden ">Loading...</span>
+        </div>
+    </div>
+
+    <!--Exclusive Feature -->
+    <div class="container-fluid pt-3 pb-3 bg-white ">
+        <h1 class="display-3 ">EXCLUISIVE FEATURE</h1>
+        <div class="row flex-row justify-content-center p-5 ">
+            <div class="col-lg-3 col-md-4 p-2 ">
+                <div class="card h-100 p-2 shadow-lg ">
+                    <img src="/Images/instructor.png " class="card-img-top w-50 mx-auto " alt="... ">
+                    <div class="card-body ">
+                        <h3 class="card-title ">Exceptional Faculty</h3>
+                        <p class="card-text ">Exceptional Faculty Our faculty is from the best institutes around the world such as IITD, Stanford and more. They also have work experience in tech giants like Amazon, Facebook, Adobe which makes them exceptional.</p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <button class="btn btn-dark w3-btn-block btn-large ">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 p-2 ">
+                <div class="card h-100 p-2 shadow-lg ">
+                    <img src="/Images/Outline.png " class="card-img-top w-50 mx-auto " alt="... ">
+                    <div class="card-body ">
+                        <h3 class="card-title ">Mentor Support</h3>
+                        <p class="card-text ">Mentor Support An incredible mentor support is provided where 1 teaching assistant is assigned to 10 students. The TA’s are top performers alumni dedicated to support and clear doubts at any point of time.</p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <button class="btn btn-dark w3-btn-block btn-large ">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 p-2 ">
+                <div class="card h-100 p-2 shadow-lg ">
+                    <img src="/Images/certificate.png " class="card-img-top w-50 mx-auto " alt=" ... ">
+                    <div class="card-body ">
+                        <h3 class="card-title ">Online Certification</h3>
+                        <p class="card-text ">Get Secured with Certificate student will be get the certificate which is signed by instructors and have our logo on it which will help them secure their career and increase job prospects with certificates signed by us.
+                        </p>
+
+                    </div>
+                    <div class="card-footer ">
+                        <button class="btn btn-dark w3-btn-block btn-large ">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-3 pb-3 bg-white ">
+            <div class="spinner-grow text-primary " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark " role="status ">
+                <span class="visually-hidden ">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer -->
+    <footer class="container-fluid bg-dark text-white text-justify">
+        <div class="row p-3 ">
+            <div class="col-lg-8 " style="border-right: 2px solid white; ">
+                <h1 class="h3-display mt-5 " style="font-weight:800 ">Leave Us A quick Note</h1>
+                <div class="container-fluid mt-5 ">
+                    <div class="row ">
+                        <div class="col-lg-7 ">
+                            <div class="container-fluid ">
+                                <form action="action_page.php ">
+                                    <label for="fname ">First Name</label>
+                                    <input type="text " id="fname " name="firstname " placeholder="Your name.. ">
+                                    <label for="lname ">Last Name</label>
+                                    <input type="text " id="lname " name="lastname " placeholder="Your last name.. ">
+                                    <label for="country ">Country</label>
+                                    <select id="country " name="country ">
+                                        <option value="australia ">Australia</option>
+                                        <option value="canada ">Canada</option>
+                                        <option value="usa ">USA</option>
+                                    </select>
+
+                                    <label for="subject ">Subject</label>
+                                    <textarea id="subject " name="subject " placeholder="Write something.. " style="height:200px "></textarea>
+
+                                    <button class="btn btn-warning btn-large btn-block " style="display: block; width: 100%; ">Submit</button>
+
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5 mt-3 ">
+                            <p>Language Zone Dehradun is a best foreign Language training provider in Dehradun Uttarakhand. We provide Japanese, French, Spanish, German & IELTS Language course training Language Zone Dehradun is a best foreign Language training
+                                provider in Dehradun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 " style="border-right: 2px solid white; ">
+                <div class=" container-fluid mt-5 ">
+                    <h1 class="h3-display mt-5 " style="text-align: left; font-weight: 800; ">Location</h1>
+                    <div class="row ">
+                        <div class="col-sm-12 mt-5 ">
+                            <p style="text-align: left; ">2nd floor, above suvidha Supermarket Patel Nagar, Dehradun, Uttarakhand 248001</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-12 mt-5 ">
+
+                            <p style="text-align: left; font-size: 15px; "> <i class="fas fa-phone mx-2 "></i><span>+91-88821-40688</span></p>
+                            <p style="text-align: left; font-size: 15px; "> <i class="fas fa-envelope mx-2 "></i><span>abhisheknegi969@gmail.com</span></p>
+                            <p style="text-align: left; ">
+                                <i class="fab fa-facebook mx-2 text-secondary fa-2x "></i>
+                                <i class="fab fa-linkedin text-secondary fa-2x mx-2 "></i>
+                                <i class="fab fa-twitter-square text-secondary mx-2 fa-2x "></i>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 ">
+                <div class="container-fluid mt-5 ">
+                    <div class="row ">
+                        <div class="col-lg-6 ">
+
+                            <img src="https://languagezone.in/static/media/Kiki.ec584b27.png " class="mt-5 " alt=" ">
+                        </div>
+                        <div class="col-lg-6 ">
+                            <div class="row p-5 ">
+                                <div class="col-sm-3 ">
+                                    <a href=" " class="btn btn-outline-info ">Home</a>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <a href=" " class="btn btn-outline-danger ">Jobs</a>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <a href=" " class="btn btn-outline-success ">contact</a>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <a href=" " class="btn btn-outline-warning ">Language</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-2 ">
+            <h3 class="copyright ">
+                Copyright &#9400; 2021 Abhishek Negi
+            </h3>
+        </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

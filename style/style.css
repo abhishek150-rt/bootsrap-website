@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-align: left;
+}
+
+#logo {
+    transition: all 0.3s;
+}
+
+#logo:hover {
+    filter: invert(100%);
+}
+
+.copyright {
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+html {
+    background-color: #2f2d2d;
+}
+
+.btn-dark {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.icon-container {
+    text-align: center;
+    z-index: 5;
+    width: 45px;
+    border-radius: 30px;
+}
+
+.icon-row {
+    width: 100%;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.icon-row:hover {
+    transform: scale(1.1);
+}
+
+.display-right {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+}
+
+.display-left {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner h4 {
+    width: 40%;
+    border-radius: 30px;
+    background-color: #228b22;
+}
+
+.card-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/span.png");
+    /* Set a specific height */
+    height: 100%;
+    width: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 35px;
+}
+
+.col-sm-2 {
+    transition: 0.5s;
+}
+
+.col-sm-2:hover {
+    transform: scale(1.2);
+}
+
+.display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+.display-2 {
+    margin: 10px;
+    font-weight: 800!important;
+}
+
+.display-3 {
+    margin: 10px;
+    font-weight: 800!important;
+}
+
+.display-4 {
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 300;
+    line-height: 2.2;
+    text-align: justify;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -39px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.card {
+    transition: all 1s;
+}
+
+.card:hover {
+    transform: scale(.9);
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    text-align: left;
+    width: 100%;
+    /* Full width */
+    padding: 5px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    outline: none;
+    /* Make sure that padding and width stays in place */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Add a background color and some padding around the form */
+
+@media screen and (max-width: 750px) {
+    .banner h4 {
+        width: 60%;
+    }
+    .p-3 {
+        padding: 5px !important;
+    }
+    .menu-bar {
+        padding: 0px !important;
+    }
+    .mx-5 {
+        margin-right: 0rem!important;
+        margin-left: 0rem!important;
+    }
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner h4 {
+        width: 80%;
+    }
+    .p-3 {
+        padding: 3px !important;
+    }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #1f1d1d;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #131212;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
